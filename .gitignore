@@ -1,0 +1,97 @@
+# ==========================================
+# .gitignore para agenda_crud_json
+# ==========================================
+
+# Archivo de contactos (DATOS PERSONALES - NO SUBIR)
+contactos.json
+contacts.json
+
+# Archivos de respaldo
+*.backup.json
+contactos.backup.*
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# Archivos de prueba
+test_*.json
+prueba_*.json
+```
+
+### 4. **LICENSE** ✅ (opcional pero recomendado)
+```
+MIT License
+
+Copyright (c) 2026 [Tu Nombre]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## ❌ NO subir a GitHub:
+
+### ❌ **contactos.json** - ¡NUNCA!
+**Razón:** Contiene datos personales (nombres, teléfonos, emails)
+
+### ❌ **Archivos de backup** - NO
+`contactos.backup.json`, `contactos.20260107.json`, etc.
+
+### ❌ **Archivos de prueba con datos** - NO
+`test_contactos.json` si tiene datos reales
+
+---
+
+## 📦 Estructura final de tu repositorio:
+```
+agenda_crud_json/
+│
+├── 📄 agenda_crud_json.py     ← Código principal
+├── 📄 README.md               ← Documentación
+├── 📄 .gitignore             ← Reglas de exclusión
+├── 📄 LICENSE                 ← Licencia (opcional)
+└── 📄 contactos.json          ← NO ESTÁ (excluido por .gitignore)
