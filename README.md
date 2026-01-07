@@ -1,5 +1,7 @@
 # agenda_crud_json.py
-Learning Project: CRUD system for managing a contact list using Python and JSON. It allows you to easily add, edit, delete, and list contacts. Ideal for practicing JSON file handling and basic database operations in Python. It can be used for both personal and professional purposes.
+Learning Project: CRUD system for managing contacts with Python and JSON. It allows you to easily add, edit, delete, and list contacts. Ideal for practicing JSON file handling and basic database operations in Python. It can be used for both personal and professional purposes.
+
+Learning Project: 
 
 # 📇 Agenda CRUD JSON
 
@@ -22,21 +24,34 @@ This is **Project 3** in the learning pathway, designed to teach:
 
 ## ✨ Features
 
-- ✅ **Create** new contacts with multiple fields
-- 📖 **Read** and display all contacts or search specific ones
-- ✏️ **Update** existing contact information
-- 🗑️ **Delete** contacts from the agenda
-- 💾 **Persistent storage** using JSON files
-- 🔍 **Search functionality** by name, phone, or email
-- 📊 **Contact statistics** and summaries
-- ✔️ **Input validation** for emails and phone numbers
-
+✅ Create, Read, Update, Delete contacts
+- 💾 Persistent JSON storage
+- 🔍 Search by name, phone, or email
+- ✏️ Edit all contact fields (including website)
+- 🗑️ Safe deletion with confirmation
+- 📊 Statistics and analytics
+- ⚠️ Input validation (phone, email, website)
+- 🚫 Cancel operations at any time with 'c'
+- 🌐 Compatible with Google Colab + Drive
+- 💻 Works on local environments (Ubuntu, Windows, Mac)
+- 
 ## 📋 Requirements
 
 - Python 3.6 or higher
 - No external dependencies (uses standard library only)
 
-## 🚀 Getting Started
+## 🚀 Quick Start
+```bash
+# Clone repository
+git clone https://github.com/tu-usuario/agenda_crud_json.git
+cd agenda_crud_json
+
+# Run locally
+python3 agenda_crud_json.py
+
+# Or in Google Colab
+# Upload the .py file and run
+```
 
 ### Installation
 
@@ -105,10 +120,10 @@ Search by:
 
 ```
 agenda_crud_json/
-│
-├── agenda_crud_json.py      # Main program file
-├── contacts.json          # Data storage (auto-generated)
-└── README.md             # This file
+├── agenda_crud_json.py      # Main program
+├── README.md                # Documentation
+├── .gitignore               # Git ignore rules
+└── contactos.json           # Created on first run (not in repo)
 ```
 
 ## 🗂️ Data Structure
@@ -123,6 +138,7 @@ Contacts are stored in JSON format:
       "name": "John Doe",
       "phone": "+49-123-45678901",
       "email": "john.doe@example.com",
+      "pageweb":"paginaweb.de",
       "address": "123 Main St, City, State",
       "notes": "College friend",
       "created_at": "2026-01-04 10:30:00",
@@ -131,6 +147,18 @@ Contacts are stored in JSON format:
   ]
 }
 ```
+## 📊 Contact Fields
+
+- 📛 Name (required)
+- 💝 Nickname (optional)
+- 📱 Phone (optional, validated)
+- 📧 Email (optional, validated)
+- 🌐 Website (optional, validated)
+- 🎂 Birthday (optional)
+- 🎯 Category (optional)
+- 📝 Notes (optional)
+
+*Note: At least phone OR email is required*
 
 ## 🎓 Learning Objectives
 
@@ -161,6 +189,9 @@ This project teaches:
    - Try-except blocks
    - File operation errors
    - User input validation
+6. **Menu-driven interfaces**
+7. **Google Drive integration (Colab)**
+
 
 ## 🔧 Code Structure
 
@@ -208,9 +239,13 @@ This is a learning project. Feel free to:
 
 This project is created for educational purposes.
 
+## 🔒 Privacy Note
+
+The `contactos.json` file is excluded from the repository (via `.gitignore`) to protect your personal data.
+
 ## 👨‍💻 Author
 
-Created as part of a structured learning path from beginner to senior developer.
+Created as part of a structured learning curriculum.
 
 ## 🙏 Acknowledgments
 
