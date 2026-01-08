@@ -1,4 +1,4 @@
-# agenda_crud_json.py - VERSIÓN PARA GOOGLE COLAB + DRIVE
+# agenda_crud_json.py - VERSIÓN 1.1 PARA GOOGLE COLAB + DRIVE
 import json
 import os
 from datetime import datetime
